@@ -1,4 +1,6 @@
+{% load search_word_tags %}
+
 {% for article in articles %}
     <h2>{{ article.name }}</h2>
-    <p>{{ article.truncated_text }}</p>
+    <p>{{ article.truncated_text|highlight:desired_word }}</p>
 {% endfor %}
