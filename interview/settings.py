@@ -1,3 +1,5 @@
+import dj_database_url
+
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -5,14 +7,7 @@ ADMINS = ()
 MANAGERS = ADMINS
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'interview.db',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
-    }
+    'default': dj_database_url.config(default='postgres://localhost')
 }
 
 TIME_ZONE = 'America/Chicago'
