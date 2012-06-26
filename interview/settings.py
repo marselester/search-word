@@ -56,6 +56,8 @@ TEMPLATE_DIRS = ()
 INSTALLED_APPS = (
     'search_word',
 
+    'gunicorn',
+
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
