@@ -1,14 +1,7 @@
-import dj_database_url
-
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
+# Settings that are the same for both development and production
 
 ADMINS = ()
 MANAGERS = ADMINS
-
-DATABASES = {
-    'default': dj_database_url.config(default='postgres://localhost')
-}
 
 TIME_ZONE = 'America/Chicago'
 LANGUAGE_CODE = 'en-us'
@@ -17,7 +10,6 @@ SITE_ID = 1
 
 USE_I18N = True
 USE_L10N = True
-
 USE_TZ = True
 
 MEDIA_ROOT = ''
@@ -55,6 +47,8 @@ TEMPLATE_DIRS = ()
 
 INSTALLED_APPS = (
     'search_word',
+
+    'gunicorn',
 
     'django.contrib.auth',
     'django.contrib.contenttypes',
