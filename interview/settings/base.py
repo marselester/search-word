@@ -3,8 +3,8 @@
 ADMINS = ()
 MANAGERS = ADMINS
 
-TIME_ZONE = 'America/Chicago'
-LANGUAGE_CODE = 'en-us'
+TIME_ZONE = 'Asia/Yekaterinburg'
+LANGUAGE_CODE = 'ru-RU'
 
 SITE_ID = 1
 
